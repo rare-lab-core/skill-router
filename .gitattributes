@@ -1,0 +1,5 @@
+# Keep line endings stable across platforms. Hooks are executed by node, which
+# is fine with either, but consistent LF keeps diffs clean for everyone.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
