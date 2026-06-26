@@ -1,0 +1,19 @@
+{
+  "name": "skill-router",
+  "version": "0.1.0",
+  "description": "Natural-language skill routing for Claude Code. Scores every prompt against your skills' declared promptSignals and injects a ranked candidate menu, plus an operating-discipline + safety-gate hook suite. Zero dependencies.",
+  "author": {
+    "name": "Captain Red"
+  },
+  "homepage": "https://github.com/REPLACE_ME/skill-router",
+  "repository": "https://github.com/REPLACE_ME/skill-router",
+  "license": "MIT",
+  "keywords": [
+    "claude-code",
+    "skills",
+    "hooks",
+    "routing",
+    "prompt-engineering",
+    "agent-harness"
+  ]
+}

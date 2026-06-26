@@ -1,0 +1,18 @@
+[
+  { "p": "write playwright tests for the checkout flow", "expect": ["testing-verification"] },
+  { "p": "set up tdd for the payment module", "expect": ["testing-verification"] },
+  { "p": "do a security audit of the login form", "expect": ["security-review"] },
+  { "p": "this form is vulnerable to sql injection", "expect": ["security-review"] },
+  { "p": "the report query is slow, what index should i add", "expect": ["database-optimization"] },
+  { "p": "explain analyze shows the join is a slow query", "expect": ["database-optimization"] },
+  { "p": "this component re-renders on every keystroke", "expect": ["react-performance"] },
+  { "p": "wrap this in usememo to fix the stale closure", "expect": ["react-performance"] },
+  { "p": "optimize the dockerfile, the image is too big", "expect": ["docker-deploy"] },
+  { "p": "write a multi-stage build for the node service", "expect": ["docker-deploy"] },
+  { "p": "design a rest api for the orders resource", "expect": ["api-design"] },
+  { "p": "add graphql resolvers for the user type", "expect": ["api-design"] },
+  { "p": "what color should the primary button be", "forbid": ["testing-verification", "security-review", "database-optimization", "react-performance", "docker-deploy", "api-design"] },
+  { "p": "rename this variable consistently across the file", "forbid": ["testing-verification", "security-review", "database-optimization", "react-performance", "docker-deploy", "api-design"] },
+  { "p": "build a react native screen, fix the re-renders", "forbid": ["react-performance"] },
+  { "p": "don't use docker, just run the unit tests", "expect": ["testing-verification"], "forbid": ["docker-deploy"] }
+]

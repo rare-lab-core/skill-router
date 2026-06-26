@@ -1,0 +1,17 @@
+{
+  "name": "skill-router",
+  "owner": {
+    "name": "Captain Red"
+  },
+  "plugins": [
+    {
+      "name": "skill-router",
+      "source": "./",
+      "description": "Natural-language skill routing for Claude Code, plus an operating-discipline and safety-gate hook suite. Zero dependencies.",
+      "version": "0.1.0",
+      "author": {
+        "name": "Captain Red"
+      }
+    }
+  ]
+}

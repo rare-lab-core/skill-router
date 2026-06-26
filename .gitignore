@@ -1,0 +1,17 @@
+# Runtime session state written by the hooks (warm/seen skills, per-session ledger).
+# Never committed — it is machine-local and regenerates on demand.
+.sessions/
+*.brain.json
+
+# Node
+node_modules/
+npm-debug.log*
+pnpm-debug.log*
+yarn-error.log*
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/

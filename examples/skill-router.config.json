@@ -1,0 +1,44 @@
+{
+  "project": { "match": ["*"] },
+  "skillsDir": ".claude/skills",
+
+  "memory": { "dir": null, "threshold": 3, "max": 4 },
+
+  "scoring": {
+    "menuSize": 12,
+    "picks": "2-3",
+    "minScore": 6,
+    "minPromptLength": 12
+  },
+
+  "intentAffinity": {
+    "testing-verification": ["TEST", "REVIEW", "DEBUG"],
+    "code-reviewer": ["REVIEW"],
+    "security-reviewer": ["REVIEW"],
+    "refactoring-specialist": ["REFACTOR"],
+    "deployment-engineer": ["DEPLOY"],
+    "architect": ["PLAN", "BUILD"]
+  },
+
+  "intentVerbs": {},
+
+  "fileSkillMap": [
+    { "pattern": "\\.test\\.(ts|tsx|js)$", "skills": ["/testing-verification"], "rules": [] },
+    { "pattern": "(^|/)migrations?/", "skills": ["/database-reviewer"], "rules": [] },
+    { "pattern": "\\.(sql)$", "skills": ["/sql-pro"], "rules": [] },
+    { "pattern": "Dockerfile|docker-compose", "skills": ["/docker-expert"], "rules": [] }
+  ],
+  "rulesDir": ".claude/rules",
+
+  "agentsMd": {
+    "paths": ["AGENTS.md"],
+    "sections": ["Learned User Preferences", "Learned Workspace Facts"]
+  },
+
+  "safety": {
+    "denyEditGlobs": [],
+    "adviseEditGlobs": [
+      { "pattern": "(^|/)(migrations?)/", "advice": "Database migration. Confirm it is reversible and safe to run mid-deploy (old client vs new schema) before applying." }
+    ]
+  }
+}

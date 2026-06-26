@@ -1,0 +1,44 @@
+{
+  "name": "skill-router",
+  "version": "0.1.0",
+  "description": "Natural-language skill routing for Claude Code, plus an operating-discipline and safety-gate hook suite. Zero dependencies.",
+  "type": "module",
+  "license": "MIT",
+  "homepage": "https://github.com/REPLACE_ME/skill-router",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/REPLACE_ME/skill-router.git"
+  },
+  "keywords": [
+    "claude-code",
+    "claude",
+    "skills",
+    "hooks",
+    "routing",
+    "prompt-engineering",
+    "agent-harness"
+  ],
+  "bin": {
+    "skill-router-probe": "bin/probe.mjs",
+    "skill-router-eval": "bin/eval.mjs"
+  },
+  "scripts": {
+    "probe": "node bin/probe.mjs",
+    "eval": "node bin/eval.mjs",
+    "test": "node bin/eval.mjs",
+    "install-hooks": "node scripts/install.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    ".claude-plugin",
+    "hooks",
+    "bin",
+    "scripts",
+    "examples",
+    "docs",
+    "README.md",
+    "LICENSE"
+  ]
+}
