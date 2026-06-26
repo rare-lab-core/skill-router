@@ -4,10 +4,10 @@
   "description": "Natural-language skill routing for Claude Code, plus an operating-discipline and safety-gate hook suite. Zero dependencies.",
   "type": "module",
   "license": "MIT",
-  "homepage": "https://github.com/REPLACE_ME/skill-router",
+  "homepage": "https://github.com/rare-lab-core/skill-router",
   "repository": {
     "type": "git",
-    "url": "https://github.com/REPLACE_ME/skill-router.git"
+    "url": "https://github.com/rare-lab-core/skill-router.git"
   },
   "keywords": [
     "claude-code",

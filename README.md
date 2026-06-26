@@ -67,7 +67,7 @@ There are two ways to install it. The first is the simple one most people will w
 ### Option A: clone it and wire it in
 
 ```text
-git clone https://github.com/REPLACE_ME/skill-router
+git clone https://github.com/rare-lab-core/skill-router
 cd skill-router
 node scripts/install.mjs --write
 ```
@@ -84,21 +84,21 @@ That prints the exact block it would add. You can read it, and either let the sc
 
 Then restart Claude Code so it picks up the new hooks. Done.
 
-**Handing it to your agent.** Most people will just clone this and tell their Claude Code agent to set it up. That works. A prompt like *"clone https://github.com/REPLACE_ME/skill-router and run its installer"* is enough. The agent can run the clone and the install command itself.
+**Handing it to your agent.** Most people will just clone this and tell their Claude Code agent to set it up. That works. A prompt like *"clone https://github.com/rare-lab-core/skill-router and run its installer"* is enough. The agent can run the clone and the install command itself.
 
 ### Option B: install it as a Claude Code plugin
 
 This repo is also a self-contained Claude Code plugin, so if you prefer the plugin system:
 
 ```text
-/plugin marketplace add REPLACE_ME/skill-router
+/plugin marketplace add rare-lab-core/skill-router
 /plugin install skill-router@skill-router
 ```
 
 Or from a local clone:
 
 ```text
-git clone https://github.com/REPLACE_ME/skill-router
+git clone https://github.com/rare-lab-core/skill-router
 /plugin marketplace add ./skill-router
 /plugin install skill-router@skill-router
 ```
