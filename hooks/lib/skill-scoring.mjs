@@ -239,8 +239,8 @@ function escapeRe(s) { return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') }
 // Inflection-tolerant single-word presence. A declared phrase 'republish' must
 // match "republishing"; 'deploy' must match "deploying". We match the exact
 // word, a simple plural, or a known morphological suffix on a shared stem — a
-// CONTROLLED suffix set (not arbitrary prefix matching) so 'shader' never
-// matches "shadow". Short words (<5) only match exact + plural, since prefix
+// CONTROLLED suffix set (not arbitrary prefix matching) so 'import' never
+// matches "important". Short words (<5) only match exact + plural, since prefix
 // drift on 3-4 letter words is mostly noise.
 const STEM_SUFFIXES = ['s', 'es', 'ing', 'ed', 'd', 'ion', 'tion', 'ation', 'ment', 'ments', 'ings']
 function sameStem(token, w) {
